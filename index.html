@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
   <main>
     <section class="results-container">
-      <p id="results"></p>
+      <p id="results">5150505151</p>
     </section>
     <section class="grid-small">
       <button id="backspace" class="button">&#8678;</button>
@@ -17,30 +20,30 @@
     </section>
     <section class="grid-large">
       <!--row-->
-      <button class="button" id="left-parenthesis">&#40;</button>
-      <button class="button" id="right-parenthesis">&#41;</button>
-      <button class="button" id="remainder">%</button>
-      <button class="button" id="squared">^2</button>
+      <button value="("class="button" id="left-parenthesis">&#40;</button>
+      <button value=")" class="button" id="right-parenthesis">&#41;</button>
+      <button value="%" class="button" id="remainder">%</button>
+      <button value="**" class="button" id="exponent">^x</button>
       <!--row-->
-      <button class="button" id="seven">7</button>
-      <button class="button" id="eight">8</button>
-      <button class="button" id="nine">9</button>
-      <button class="button" id="division">&#247;</button>
+      <button value="7" class="button" id="seven">7</button>
+      <button value="8" class="button" id="eight">8</button>
+      <button value="9" class="button" id="nine">9</button>
+      <button value="/" class="button" id="division">&#247;</button>
       <!--row-->
-      <button class="button" id="four">4</button>
-      <button class="button" id="five">5</button>
-      <button class="button" id="six">6</button>
-      <button class="button" id="multi">&#215;</button>
+      <button value="4" class="button" id="four">4</button>
+      <button value="5" class="button" id="five">5</button>
+      <button value="6" class="button" id="six">6</button>
+      <button value="*" class="button" id="multi">&#215;</button>
       <!--row-->
-      <button class="button" id="one">1</button>
-      <button class="button" id="two">2</button>
-      <button class="button" id="three">3</button>
-      <button class="button" id="minus">&#8722;</button>
+      <button value="1" class="button" id="one">1</button>
+      <button value="2" class="button" id="two">2</button>
+      <button value="3" class="button" id="three">3</button>
+      <button value="-" class="button" id="minus">&#8722;</button>
       <!--row-->
-      <button class="button" id="zero">0</button>
-      <button class="button" id="decimal">.</button>
-      <button class="button" id="equal">&#61;</button>
-      <button class="button" id="plus">&#43;</button>
+      <button value="0" class="button" id="zero">0</button>
+      <button value="." class="button" id="decimal">.</button>
+      <button value="=" class="button" id="equal">&#61;</button>
+      <button value="+" class="button" id="plus">&#43;</button>
     </section>
   </main>
 

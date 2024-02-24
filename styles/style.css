@@ -1,0 +1,106 @@
+:root {
+  --primary: #67E862;
+  --secondary: #ACF2AA;
+  --accent: #F0AAF2;
+  --light: #F2FDF1;
+  --dark: #222723;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary);
+  font-family: "Chakra Petch", sans-serif;
+}
+
+/* test code - will delete */
+html{
+  background-color: brown;
+}
+
+body {
+  width: 320px;
+  height: 570px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: .5em;
+  padding: .7em;
+  
+}
+
+.results-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 18%;
+  padding: .5em .3em;
+  background-color: var(--light);
+  box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.25);
+  border-radius: 4%;
+}
+
+.results-container p {
+  font-size: 2.6em;
+  font-weight: bold;
+  background-color: var(--light);
+}
+
+.grid-small {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  gap: .5em;
+  
+}
+
+.grid-large {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 70%;
+  justify-content: space-between;
+  gap: .5em;
+}
+
+.grid-small, .grid-large {
+  
+}
+
+button {
+  color: var(--primary);
+  background-color: var(--light);
+  font-size: 1.8em;
+  border: none;
+  box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.25);
+  border-radius: 8%;
+}
+
+button:hover {
+  color: var(--light);
+  background-color: var(--primary);
+  font-weight: bold;
+}
+
+button:active {
+  color: var(--primary);
+  background-color: var(--accent);
+  font-weight: bold;
+}
+
+.grid-small button {
+  width: 47%;
+}
+
+.grid-large button {
+  width: 20%;
+}
