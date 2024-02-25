@@ -38,8 +38,9 @@ main {
 
 .results-container {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
   height: 18%;
   padding: .5em .3em;
@@ -48,9 +49,14 @@ main {
   border-radius: 4%;
 }
 
-.results-container p {
+.results-container :nth-child(2) {
   font-size: 2.6em;
   font-weight: bold;
+  background-color: var(--light);
+}
+
+.results-container :nth-child(1) {
+  font-size: 1.2em;
   background-color: var(--light);
 }
 
